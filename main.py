@@ -32,7 +32,8 @@ app.add_middleware(
 )
 pickle_in = open("Stroke.pickle4","rb")
 trans,classifier=pickle.load(pickle_in)
-
+def transf():
+    return trans,classifier
 @app.get('/')
 def index():
     return {'message': 'Hello, World'}
@@ -84,3 +85,6 @@ def predict(data: BrainStroke):
     return {
         'prediction': prediction
     }
+
+if __name__ == '__main__':
+    uvicorn.run(app, port=8080, host='0.0.0.0')    
