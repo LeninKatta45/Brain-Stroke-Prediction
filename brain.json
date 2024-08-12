@@ -1,0 +1,1 @@
+{"gender": ["Male", "Female", "Other"], "ever_married": ["Yes", "No"], "work_type": ["Private", "Self-employed", "Govt_job", "children", "Never_worked"], "Residence_type": ["Urban", "Rural"], "smoking_status": ["formerly smoked", "never smoked", "smokes", "prefer not to say"]}

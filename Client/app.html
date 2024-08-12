@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Stroke Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+
+    <h3>BRAIN-STROKE DETECTOR</h3>
+    <div class="img"></div>
+    <form class="form">
+        <div class="age1">
+            <h2>Age</h2>
+            <input class="area" type="text" id="age" class="floatLabel" name="age" value="20.0">
+        </div>
+        <h2>Body Mass Index</h2>
+        <div class="pol">
+            <button id="showImageButton" onclick="onClick()" type="button">i</button>
+            <div id="blurBackground"></div>
+            <div id="imageContainer"></div>
+        </div>
+        <input class="area1" type="text" id="bmi" class="floatLabel" name="bmi" value="0.0">
+        <h2>Average Glucose Level(mg/dL)</h2>
+        <div class="pole">
+            <button id="showImageButto" onclick="onClic()" type="button">i</button>
+            <div id="blurBackgroun"></div>
+            <div id="imageContaine"></div>
+        </div>
+        <input class="area2" type="text" id="bls" class="floatLabel" name="bls" value="0.0">
+        <h2>Gender</h2>
+        <div class="switch-field">
+            <input type="radio" id="radio-male-1" name="gender" value="0.0" />
+            <label for="radio-male-1">Male</label>
+            <input type="radio" id="radio-female-2" name="gender" value="1.0" checked />
+            <label for="radio-female-2">Female</label>
+
+        </div>
+        <h2>Hyper Tension</h2>
+        <div class="switch-field1">
+            <input type="radio" id="radio-hyper-4" name="Hyper" value="0.0" checked />
+            <label for="radio-hyper-4">No</label>
+            <input type="radio" id="radio-hyper-3" name="Hyper" value="1.0" />
+            <label for="radio-hyper-3">Yes</label>
+
+
+        </div>
+        <h2>Heart Disease</h2>
+        <div class="switch-field2">
+            <input type="radio" id="radio-heart-6" name="heart" value="0.0" checked />
+            <label for="radio-heart-6">No</label>
+            <input type="radio" id="radio-heart-5" name="heart" value="1.0" />
+            <label for="radio-heart-5">Yes</label>
+
+
+        </div>
+        <h2>Ever Married</h2>
+        <div class="switch-field3">
+            <input type="radio" id="radio-marry-8" name="marry" value="0.0" checked />
+            <label for="radio-marry-8">No</label>
+            <input type="radio" id="radio-marry-7" name="marry" value="1.0" />
+            <label for="radio-marry-7">Yes</label>
+
+
+        </div>
+        <h2>Residence Type</h2>
+        <div class="switch-field">
+            <input type="radio" id="radio-res-9" name="residence" value="0.0" checked />
+            <label for="radio-res-9">Rural</label>
+            <input type="radio" id="radio-res-10" name="residence" value="1.0" />
+            <label for="radio-res-10">Urban</label>
+
+
+        </div>
+        <h2>Smoking Status</h2>
+        <div>
+            <select class="smoke" name="" id="uiSmoke">
+                <option value="" disabled="disabled" selected="selected">Choose Status</option>
+                <option>Electronic City</option>
+                <option>Rajaji Nagar</option>
+            </select>
+        </div>
+        <h2>Work Type</h2>
+        <div>
+            <select class="work" name="" id="uiWork">
+                <option value="" disabled="disabled" selected="selected">Choose Type</option>
+                <option>Electronic City</option>
+                <option>Rajaji Nagar</option>
+            </select>
+        </div>
+        <h2></h2>
+        <button class="submit" onclick="onClickedEstimatePrice()" type="button"> Result</button>
+        <div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+
+    </form>
+</body>
+</html>

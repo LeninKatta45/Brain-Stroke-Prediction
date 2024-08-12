@@ -1,0 +1,228 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.switch-field {
+    display: flex;
+    margin-bottom: 36px;
+    overflow: hidden;
+}
+
+    .switch-field input {
+        position: absolute !important;
+        clip: rect(0, 0, 0, 0);
+        height: 1px;
+        width: 1px;
+        border: 0;
+        overflow: hidden;
+    }
+
+    .switch-field label {
+        background-color: #e4e4e4;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 14px;
+        line-height: 1;
+        text-align: center;
+        padding: 8px 16px;
+        margin-right: -1px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+        transition: all 0.1s ease-in-out;
+    }
+
+        .switch-field label:hover {
+            cursor: pointer;
+        }
+
+    .switch-field input:checked + label {
+        background-color: #f786ee;
+        box-shadow: none;
+    }
+
+    .switch-field label:first-of-type {
+        border-radius: 4px 0 0 4px;
+    }
+
+    .switch-field label:last-of-type {
+        border-radius: 0 4px 4px 0;
+    }
+
+.form {
+    max-width: 270px;
+    font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+    font-weight: normal;
+    line-height: 1.625;
+    margin: 8px auto;
+    padding-left: 16px;
+    z-index: 2;
+}
+
+h2 {
+    color: white;
+   -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+h3 {
+    color: lightblue;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 58px;
+    margin-bottom: 8px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color:lightpink;
+}
+
+.age1 input {
+    background: #e4e4e4;
+}
+.index {
+    position: relative;
+    left: -45px;
+    top: 350px;
+    color:yellow;
+    white-space: nowrap;
+}
+pre {
+    color: lightblue;
+    -webkit-text-stroke: 0.91px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.rk{
+    color:white;
+}
+.smoke {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #e3dbd2;
+    width: 76%;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 5px;
+}
+.work {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #e3dbd2;
+    width: 76%;
+    border: 0;
+    margin: 0 0 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.submit {
+    background: #a5dc86;
+    width: 76%;
+    border: 0;
+    margin: 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.result {
+    white-space: nowrap;
+}
+
+.img {
+    background: url('https://img.freepik.com/free-photo/brain-study-background-mental-health-care-medical-technology_53876-105237.jpg?w=996&t=st=1693156607~exp=1693157207~hmac=eeca6688108976d798781f1dc95acfaf9a77ec72202521122b483230ac40631c');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-size: 100% 100%;
+    -webkit-filter: blur(0.5px);
+    -moz-filter: blur(0.5px);
+    -o-filter: blur(0.5px);
+    -ms-filter: blur(0.5px);
+    filter: blur(5px);
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+#imageContainer {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+#blurBackground {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+}
+
+#showImageButton {
+   
+    color: black;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    background-color: lightgray;
+    opacity:0.8;
+    font-style:initial;
+    border-radius: 6px;
+}
+#imageContaine {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 2;
+}
+
+#blurBackgroun {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1;
+}
+
+#showImageButto {
+    
+    color: black;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    background-color: lightgray;
+    opacity: 0.8;
+    font-style: initial;
+    border-radius: 6px;
+}
+body, html {
+    height: 100%;
+}
